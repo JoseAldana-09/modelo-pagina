@@ -1,0 +1,103 @@
+.quienessomos {
+    position: relative;
+}
+
+.quienessomos .vert {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.quienessomos .capa-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 121, 194, 0.7);
+    z-index: 1;
+}
+
+.quienessomos .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.quienessomos .letras h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quienessomos .contenido .reservacita .citarev {
+    position: absolute;
+    right: 350px;
+    background-color: transparent;
+    color: white;
+    padding: 20px 90px;
+    border: 2px solid #72f6ff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transform: translateY(-45%);
+}
+
+.quienessomos .contenido .reservacita a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quienessomos .reservacita .citarev:hover {
+    background-color: #72f6ff;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .quienessomos .contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quienessomos .letras h1 {
+        text-align: left;
+        font-size: 45px;
+        padding: 10px 50px;
+        font-size: 13px;
+        padding: 20px 100px;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .quienessomos .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .quienessomos .contenido .reservacita .citarev {
+        position: relative;
+        right: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        transform: none;
+      }
+    }
+    

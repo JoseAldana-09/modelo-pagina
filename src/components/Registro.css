@@ -1,0 +1,99 @@
+.registro {
+    position: relative;
+}
+
+.registro .container {
+    display: flex;
+    flex-direction: column; /* Por defecto, en columna para pantallas pequeñas */
+    justify-content: space-between;
+    background-color: #eff6fc;
+    padding: 20px;
+}
+
+.registro .mensaje, .registro .cuadrado {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    .registro .container {
+        flex-direction: row; /* Cambia a fila para pantallas grandes */
+        align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
+        text-align: left; /* Alinea todo el texto a la izquierda */
+    }
+
+    .registro .mensaje, .registro .cuadrado {
+        flex: 1 1 45%; /* Permite que ambos divs crezcan y se encojan según el espacio disponible */
+        margin: 10px; /* Margen entre los elementos */
+    }
+
+    .mensaje {
+        padding: 30px 60px;
+        transform: none; /* Elimina la transformación */
+    }
+
+    .cuadrado {
+        padding: 3vw 6vw;
+        background-color: #f9f9f9;
+        border: 2px solid #fff8f8;
+        border-radius: 3px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Ajusta el ancho al 100% para pantallas pequeñas */
+        margin: 0; /* Elimina el margen auto para centrar el cuadrado */
+        max-width: none; /* Elimina el ancho máximo para que se ajuste al espacio disponible */
+    }
+}
+
+.form-control {
+    padding: 1.2vw 1vw;
+    background-color: #eff6fc;
+    color: #333;
+    border: 1px solid #eff6fc;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #72f6ff;
+}
+
+.boton-enviar {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 12px 65px;
+    border: 2px solid #72f6ff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-enviar:hover {
+    background-color: rgba(126, 238, 241, 0.9);
+}
+
+.mensaje h1 {
+    color: #4b687d;
+    font-size: 45px; /* Tamaño más pequeño para el título */
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.mensaje p {
+    color: #6c899e;
+    font-size: 18px; /* Tamaño más pequeño para la descripción */
+    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: 550;
+    text-align: left; /* Alinea el texto a la izquierda */
+}

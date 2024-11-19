@@ -1,0 +1,159 @@
+/* Estilos para la sección de portada */
+.portada {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.por {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+/* Capa de fondo */
+.capa-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 121, 194, 0.7); /* Fondo azul más oscuro con opacidad */
+    z-index: 1; /* Asegura que la capa esté encima de la imagen */
+}
+
+/* Contenido de la portada */
+.contenido-portada {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: white;
+    text-align: left;
+    z-index: 2; /* Asegura que el texto esté encima de la capa de color */
+    transform: translateY(-45%) translateX(-1%);
+}
+
+.contenido-portada h1 {
+    font-size: 70px; /* Tamaño del título */
+    margin: 0; /* Sin margen */
+    padding: 0px 80px;
+}
+
+.contenido-portada p {
+    font-size: 1.2em; /* Tamaño del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+    padding: 20px 80px;
+}
+
+/* Estilos para el botón de reserva */
+.btn-reserva {
+    background-color: transparent;
+    color: white;
+    padding: 1.2vw 6.5vw;
+    border: 1px solid #72f6ff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 5vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-reserva:hover {
+    background-color: rgba(113, 250, 255, 0.9);
+}
+
+.registro .container {
+    display: flex;
+    flex-direction: column; /* Por defecto, en columna para pantallas pequeñas */
+    justify-content: space-between;
+    background-color: #eff6fc;
+    padding: 20px;
+}
+
+.registro .mensaje, .registro .cuadrado {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    .registro .container {
+        flex-direction: row; /* Cambia a fila para pantallas grandes */
+    }
+
+    .registro .mensaje, .registro .cuadrado {
+        flex: 1 1 45%; /* Permite que ambos divs crezcan y se encojan según el espacio disponible */
+    }
+}
+
+.mensaje {
+    padding: 30px 60px;
+    transform: translateX(20%);
+    transform: translateX(6%);
+}
+
+.cuadrado {
+    padding: 3vw 6vw;
+    background-color: #f9f9f9;
+    border: 2px solid #fff8f8;
+    border-radius: 3px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ajusta el ancho al 100% para pantallas pequeñas */
+    margin: 20px auto;
+    max-width: 400px; /* Máximo ancho para pantallas grandes */
+
+}
+
+.form-control {
+    padding: 1.2vw 1vw;
+    background-color: #eff6fc;
+    color: #333;
+    border: 1px solid #eff6fc;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #72f6ff;
+}
+
+.boton-enviar {
+    background-color: transparent; /* Color del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    padding: 12px 65px; /* Espaciado interno en el botón */
+    border: 2px solid #72f6ff; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+    font-size: 13px; /*cambiar de tamaño al texto*/
+    font-weight: bold; /* Poner el texto en negrita */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-enviar:hover {
+    background-color: rgba(126, 238, 241, 0.9);
+}
+
+.mensaje h1 {
+    color: #4b687d;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.mensaje p {
+    color: #6c899e;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: 550;
+}

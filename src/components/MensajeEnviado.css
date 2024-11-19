@@ -1,0 +1,46 @@
+/* src/components/MensajeEnviado.css */
+
+.mensaje-enviado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e6f7ff;
+    text-align: center;
+  }
+  
+  .contenedor {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .titulo {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .mensaje {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .boton-home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .boton-home:hover {
+    background-color: #3498db;
+  }
+  

@@ -1,0 +1,74 @@
+/* src/components/ReservarCita.css */
+
+.reservar-cita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e6f7ff;
+    text-align: center;
+  }
+  
+  .contenedor {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .titulo {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .mensaje {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input, .textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .boton:hover {
+    background-color: #3498db;
+  }
+  
+  .boton-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .boton-home:hover {
+    background-color: #3498db;
+  }
+  

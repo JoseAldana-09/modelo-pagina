@@ -1,0 +1,89 @@
+.blog {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.blog .container {
+    display: flex;
+    flex-direction: column; /* Por defecto, en columna para pantallas pequeñas */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog .container img.fisio-terapia {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Ancho máximo de la imagen */
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.blog .container .letras {
+    text-align: center; /* Centra el texto */
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+.blog .container .letras h1 {
+    font-size: 36px; /* Tamaño del título */
+    color: #4b687d;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.blog .container .letras p {
+    color: #6c899e;
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.blog .container .leer-mas {
+    background-color: transparent;
+    color: #4b687d;
+    padding: 10px 30px;
+    border: 2px solid #72f6ff;
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    font-weight: bold;
+}
+
+.blog .container .leer-mas:hover {
+    background-color: #72f6ff; /* Cambia el fondo del botón al pasar el mouse */
+    color: black; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 768px) {
+    .blog .container {
+        flex-direction: row; /* Cambia a fila para pantallas grandes */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog .container img.fisio-terapia {
+        margin-right: 20px; /* Espacio a la derecha de la imagen */
+        margin-bottom: 0; /* Elimina el espacio inferior */
+    }
+
+    .blog .container .letras {
+        text-align: left; /* Alinea el texto a la izquierda */
+        padding: 0 20px;
+    }
+
+    .blog .container .letras h1 {
+        font-size: 36px; /* Ajusta el tamaño del título para pantallas grandes */
+    }
+
+    .blog .container .letras p {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .blog .container .leer-mas {
+        margin-top: 20px; /* Espacio superior para el botón */
+    }
+}

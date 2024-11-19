@@ -1,0 +1,53 @@
+/* src/components/LeerMas.css */
+
+.leer-mas-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contenedor {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .titulo {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .mensaje {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .contenido {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .boton-home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .boton-home:hover {
+    background-color: #3498db;
+  }
+  
